@@ -1697,6 +1697,109 @@
   .psych-body { font-size: 12px; color: #6b82a3; line-height: 1.75; }
   .psych-body strong { color: #9ab0cc; }
   .psych-quote { margin-top: 10px; padding: 10px 14px; border-left: 2px solid var(--pc, #a855f7); font-size: 11px; color: #8ca3c8; font-style: italic; line-height: 1.6; background: rgba(0,0,0,0.15); border-radius: 0 8px 8px 0; }
+
+  /* hydratation */
+  .hydra-intro { background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.18); border-radius: 14px; padding: 18px 22px; margin-bottom: 20px; font-size: 13px; color: #8ca3c8; line-height: 1.7; }
+  .hydra-intro strong { color: #e2eaf8; }
+  .hydra-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; margin-bottom: 16px; }
+  .hydra-card { background: var(--surface); border: 1px solid var(--border); border-radius: 15px; padding: 20px; }
+  .hydra-card-icon { font-size: 28px; margin-bottom: 10px; }
+  .hydra-card-title { font-size: 13px; font-weight: 800; color: #f1f5f9; margin-bottom: 12px; }
+  .hydra-card-body { font-size: 12px; color: #6b82a3; line-height: 1.75; }
+  .hydra-card-body p { margin-bottom: 10px; }
+  .hydra-card-body strong { color: #9ab0cc; }
+  .hydra-card-body ul { padding-left: 16px; }
+  .hydra-card-body li { margin-bottom: 5px; }
+  .hydra-rule-row { display: flex; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--border); font-size: 11px; }
+  .hydra-rule-row:last-child { border-bottom: none; }
+  .hydra-rule-label { font-weight: 800; color: #3b82f6; min-width: 80px; flex-shrink: 0; }
+  .hydra-rule-val { color: #6b82a3; }
+  .hydra-warning { display: flex; gap: 12px; align-items: flex-start; background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.2); border-radius: 12px; padding: 14px 18px; font-size: 12px; color: #8ca3c8; line-height: 1.6; }
+  .hydra-warning strong { color: #e2eaf8; }
+
+  /* erreurs du débutant */
+  .erreur-intro { font-size: 13px; color: #8ca3c8; line-height: 1.7; margin-bottom: 20px; padding: 16px 20px; background: rgba(249,115,22,0.06); border: 1px solid rgba(249,115,22,0.15); border-radius: 13px; }
+  .erreur-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+  .erreur-card { background: var(--surface); border: 1px solid var(--border); border-radius: 15px; padding: 20px; position: relative; overflow: hidden; transition: border-color 0.2s, transform 0.2s; }
+  .erreur-card:hover { border-color: var(--muted2); transform: translateY(-2px); }
+  .erreur-num { font-family: 'Bebas Neue', sans-serif; font-size: 52px; color: #f97316; opacity: 0.12; position: absolute; top: 6px; right: 14px; line-height: 1; pointer-events: none; }
+  .erreur-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .erreur-icon { font-size: 22px; flex-shrink: 0; }
+  .erreur-title { font-size: 13px; font-weight: 800; color: #f1f5f9; }
+  .erreur-body { font-size: 12px; color: #6b82a3; line-height: 1.75; margin-bottom: 12px; }
+  .erreur-fix { font-size: 11px; color: #4ade80; background: rgba(34,197,94,0.08); border-radius: 8px; padding: 8px 12px; line-height: 1.5; }
+
+  /* progression & plateau */
+  .prog-intro { font-size: 13px; color: #8ca3c8; line-height: 1.7; margin-bottom: 20px; }
+  .prog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; margin-bottom: 24px; }
+  .prog-block { background: var(--surface); border: 1px solid var(--border); border-radius: 15px; padding: 22px; }
+  .prog-block-title { font-size: 14px; font-weight: 800; color: #f1f5f9; margin-bottom: 14px; }
+  .prog-block-body { font-size: 12px; color: #6b82a3; line-height: 1.8; }
+  .prog-block-body p { margin-bottom: 10px; }
+  .prog-block-body strong { color: #9ab0cc; }
+  .prog-block-body ul { padding-left: 16px; }
+  .prog-block-body li { margin-bottom: 7px; }
+  .prog-timeline { background: var(--surface2); border: 1px solid var(--border); border-radius: 16px; padding: 24px; }
+  .prog-timeline-title { font-size: 11px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; }
+  .prog-steps { display: flex; flex-direction: column; }
+  .prog-step { display: grid; grid-template-columns: 14px 110px 1fr; gap: 14px; align-items: flex-start; padding-bottom: 18px; position: relative; }
+  .prog-step:not(:last-child)::after { content: ''; position: absolute; left: 6px; top: 18px; width: 1px; height: calc(100% - 4px); background: var(--border); }
+  .prog-step-dot { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; margin-top: 2px; }
+  .prog-step-period { font-size: 11px; font-weight: 800; color: #c8d5e8; }
+  .prog-step-desc { font-size: 12px; color: #6b82a3; line-height: 1.65; }
+  .prog-step-desc strong { color: #9ab0cc; }
+  @media (max-width: 480px) {
+    .prog-step { grid-template-columns: 14px 80px 1fr; gap: 10px; }
+  }
+
+  /* compléments */
+  .comp-intro { display: flex; gap: 16px; align-items: flex-start; background: var(--surface2); border: 1px solid var(--border); border-radius: 16px; padding: 22px; margin-bottom: 8px; }
+  .comp-intro-icon { font-size: 32px; flex-shrink: 0; }
+  .comp-intro-title { font-size: 15px; font-weight: 800; color: #f1f5f9; margin-bottom: 8px; }
+  .comp-intro p { font-size: 13px; color: #6b82a3; line-height: 1.7; }
+  .comp-intro strong { color: #9ab0cc; }
+
+  .tier-block { margin-bottom: 28px; }
+  .tier-badge { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding: 5px 14px; border-radius: 999px; margin-bottom: 8px; }
+  .tier-s { background: rgba(249,115,22,0.15); color: #f97316; border: 1px solid rgba(249,115,22,0.3); }
+  .tier-a { background: rgba(251,191,36,0.12); color: #fbbf24; border: 1px solid rgba(251,191,36,0.25); }
+  .tier-b { background: rgba(99,102,241,0.12); color: #818cf8; border: 1px solid rgba(99,102,241,0.22); }
+  .tier-desc { font-size: 12px; color: var(--muted); margin-bottom: 14px; line-height: 1.5; }
+
+  .comp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 10px; }
+  .comp-card { background: var(--surface); border: 1px solid var(--border); border-radius: 15px; padding: 20px; transition: border-color 0.2s, transform 0.2s; }
+  .comp-card:hover { border-color: var(--muted2); transform: translateY(-2px); }
+  .comp-card-small { padding: 16px; }
+  .comp-card-top { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 12px; }
+  .comp-emoji { font-size: 28px; line-height: 1; flex-shrink: 0; }
+  .comp-name { font-size: 14px; font-weight: 800; color: #f1f5f9; margin-bottom: 6px; }
+  .comp-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .comp-tag { font-size: 9px; font-weight: 700; letter-spacing: .07em; padding: 2px 8px; border-radius: 999px; }
+  .comp-tag.green { background: rgba(34,197,94,0.1); color: #4ade80; }
+  .comp-tag.orange { background: rgba(249,115,22,0.1); color: #fb923c; }
+  .comp-tag.blue { background: rgba(59,130,246,0.1); color: #60a5fa; }
+  .comp-tag.gray { background: rgba(100,116,139,0.15); color: #94a3b8; }
+  .comp-body { font-size: 12px; color: #6b82a3; line-height: 1.75; margin-bottom: 14px; }
+  .comp-dosage { border-top: 1px solid var(--border); padding-top: 12px; display: flex; flex-direction: column; gap: 7px; }
+  .comp-dosage-row { display: flex; gap: 10px; font-size: 11px; color: #6b82a3; line-height: 1.5; }
+  .comp-dosage-label { font-weight: 800; color: #4a5c7a; min-width: 58px; flex-shrink: 0; }
+
+  .comp-avoid-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; margin-bottom: 24px; }
+  .comp-avoid-card { background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.12); border-radius: 13px; padding: 16px; }
+  .comp-avoid-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .comp-avoid-icon { font-size: 18px; }
+  .comp-avoid-name { font-size: 12px; font-weight: 800; color: #f87171; }
+  .comp-avoid-body { font-size: 11px; color: #6b82a3; line-height: 1.65; }
+
+  .stack-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; margin-bottom: 24px; }
+  .stack-card { background: var(--surface); border: 1px solid var(--border); border-radius: 15px; padding: 20px; }
+  .stack-label { font-size: 11px; font-weight: 800; letter-spacing: .06em; margin-bottom: 14px; }
+  .stack-items { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+  .stack-item { display: flex; align-items: center; gap: 10px; font-size: 12px; color: #8ca3c8; }
+  .stack-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .stack-note { font-size: 11px; color: var(--muted); line-height: 1.6; padding-top: 12px; border-top: 1px solid var(--border); }
+
+  .comp-disclaimer { display: flex; gap: 12px; align-items: flex-start; background: rgba(99,102,241,0.06); border: 1px solid rgba(99,102,241,0.18); border-radius: 12px; padding: 14px 18px; font-size: 12px; color: #8ca3c8; line-height: 1.6; }
 </style>
 </head>
 <body>
@@ -1741,6 +1844,9 @@
     </button>
     <button class="tab-btn" id="tabConseils" onclick="switchTab('conseils')">
       <span class="tab-btn-icon">📖</span> Conseils
+    </button>
+    <button class="tab-btn" id="tabComplements" onclick="switchTab('complements')">
+      <span class="tab-btn-icon">🧪</span> Compléments
     </button>
   </div>
 </div>
@@ -2642,8 +2748,565 @@
     </div>
   </section>
 
+
+  <!-- HYDRATATION -->
+  <section class="extra-section">
+    <div class="section-eyebrow">Hydratation & Micronutriments — Ce qu'on oublie toujours</div>
+
+    <div class="hydra-intro">
+      L'eau représente <strong>70% de la masse musculaire</strong>. Une déshydratation de seulement 2% réduit la force musculaire de 10 à 20%. C'est souvent la première cause de stagnation chez les débutants — et la plus facile à corriger.
+    </div>
+
+    <div class="hydra-grid">
+
+      <div class="hydra-card">
+        <div class="hydra-card-icon">💧</div>
+        <div class="hydra-card-title">Combien boire ?</div>
+        <div class="hydra-card-body">
+          <p>La règle de base : <strong>35 ml par kg de poids</strong> par jour. Pour 75 kg → 2,6 L. Ajoute <strong>500 ml à 1 L</strong> pour chaque heure d'entraînement.</p>
+          <div class="hydra-rule-row">
+            <span class="hydra-rule-label">Au réveil</span>
+            <span class="hydra-rule-val">1 grand verre à jeun (réhydrate après le sommeil)</span>
+          </div>
+          <div class="hydra-rule-row">
+            <span class="hydra-rule-label">Avant séance</span>
+            <span class="hydra-rule-val">400–600 ml dans l'heure précédente</span>
+          </div>
+          <div class="hydra-rule-row">
+            <span class="hydra-rule-label">Pendant</span>
+            <span class="hydra-rule-val">200 ml toutes les 15–20 min</span>
+          </div>
+          <div class="hydra-rule-row">
+            <span class="hydra-rule-label">Après</span>
+            <span class="hydra-rule-val">500 ml dans la première heure</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hydra-card">
+        <div class="hydra-card-icon">⚡</div>
+        <div class="hydra-card-title">Électrolytes — Pas que de l'eau</div>
+        <div class="hydra-card-body">
+          <p>La transpiration évacue des <strong>minéraux essentiels</strong> à la contraction musculaire. Si tu crampes ou te sens vidé en fin de séance, c'est souvent un déficit en électrolytes.</p>
+          <ul>
+            <li><strong>Sodium</strong> — une pincée de sel dans ton eau post-séance</li>
+            <li><strong>Magnésium</strong> — noix, chocolat noir, épinards. Déficit très fréquent</li>
+            <li><strong>Potassium</strong> — banane, avocat, patate douce</li>
+            <li><strong>Calcium</strong> — produits laitiers, sardines avec arêtes, brocoli</li>
+          </ul>
+          <p style="font-size:11px;color:var(--muted);margin-top:10px">Les boissons isotoniques (type Isostar) ne sont utiles que pour les séances de +90 min — inutile sinon.</p>
+        </div>
+      </div>
+
+      <div class="hydra-card">
+        <div class="hydra-card-icon">🧪</div>
+        <div class="hydra-card-title">Vitamines & Minéraux clés</div>
+        <div class="hydra-card-body">
+          <p>Pas besoin de piles entières de compléments. Ces quelques carences sont très communes chez les sportifs en France :</p>
+          <ul>
+            <li><strong>Vitamine D</strong> — déficit quasi universel (peu de soleil, surtout en hiver). Essentielle pour la testostérone et la force. 1000–2000 UI/jour</li>
+            <li><strong>Oméga-3</strong> — réduit l'inflammation et améliore la récupération. 2–3g EPA+DHA par jour via poissons gras ou compléments</li>
+            <li><strong>Fer (femmes)</strong> — vérifier régulièrement si règles abondantes, fatigue chronique</li>
+            <li><strong>Zinc</strong> — impliqué dans la synthèse protéique et testostérone. Viande rouge, huîtres, graines de courge</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hydra-warning">
+      <span>🚰</span>
+      <span>Un conseil simple : si tes urines sont jaune foncé, tu es déshydraté. Elles doivent être <strong>jaune paille clair à translucides</strong> la majeure partie de la journée.</span>
+    </div>
+
+  </section>
+
+  <!-- ERREURS DU DÉBUTANT -->
+  <section class="extra-section">
+    <div class="section-eyebrow">Les erreurs du débutant — Évite ces pièges dès le départ</div>
+
+    <div class="erreur-intro">
+      90% des débutants font les mêmes erreurs. Pas par manque de motivation — par manque d'information. Reconnaître ces pièges tôt te fera économiser des mois de stagnation.
+    </div>
+
+    <div class="erreur-grid">
+
+      <div class="erreur-card">
+        <div class="erreur-num">01</div>
+        <div class="erreur-head">
+          <span class="erreur-icon">📆</span>
+          <div class="erreur-title">S'entraîner tous les jours</div>
+        </div>
+        <div class="erreur-body">Le muscle ne pousse <strong>pas pendant la séance</strong> — il pousse pendant le repos. S'entraîner 7 jours/7 sans repos est contre-productif et mène droit au surentraînement. Respecte les jours de repos du programme.</div>
+        <div class="erreur-fix">✓ 3 à 5 séances par semaine, max. Le reste = récupération active.</div>
+      </div>
+
+      <div class="erreur-card">
+        <div class="erreur-num">02</div>
+        <div class="erreur-head">
+          <span class="erreur-icon">🏃</span>
+          <div class="erreur-title">Sauter l'échauffement</div>
+        </div>
+        <div class="erreur-body">L'échauffement n'est pas optionnel. Un muscle froid se blesse facilement, sa contraction est moins efficace, et les tendons sont moins souples. 5 minutes évitent des semaines d'arrêt.</div>
+        <div class="erreur-fix">✓ 5 à 10 min de cardio léger + mobilité articulaire avant chaque séance.</div>
+      </div>
+
+      <div class="erreur-card">
+        <div class="erreur-num">03</div>
+        <div class="erreur-head">
+          <span class="erreur-icon">⚖️</span>
+          <div class="erreur-title">Changer de programme toutes les semaines</div>
+        </div>
+        <div class="erreur-body">Le corps a besoin de <strong>4 à 8 semaines minimum</strong> pour s'adapter à un programme. Switcher constamment (le fameux "muscle confusion") empêche toute progression mesurable. Reste sur un plan, sois régulier.</div>
+        <div class="erreur-fix">✓ Un seul programme pendant 6 à 12 semaines, puis ajuste si besoin.</div>
+      </div>
+
+      <div class="erreur-card">
+        <div class="erreur-num">04</div>
+        <div class="erreur-head">
+          <span class="erreur-icon">🥤</span>
+          <div class="erreur-title">Manger comme avant</div>
+        </div>
+        <div class="erreur-body">L'entraînement représente 30 à 40% du résultat. La nutrition fait le reste. Tu peux t'entraîner parfaitement et ne pas prendre un gramme de muscle si tu ne manges pas assez, ou pas assez de protéines.</div>
+        <div class="erreur-fix">✓ 1,6 à 2 g de protéines par kg de poids. Surplus calorique de +200 à 300 kcal.</div>
+      </div>
+
+      <div class="erreur-card">
+        <div class="erreur-num">05</div>
+        <div class="erreur-head">
+          <span class="erreur-icon">📱</span>
+          <div class="erreur-title">Se comparer aux autres</div>
+        </div>
+        <div class="erreur-body">Instagram montre des physiques après des années d'entraînement, souvent avec de l'aide chimique, sous éclairage parfait. Comparer tes 3 semaines de pratique à 5 ans de travail + filtre est le chemin le plus rapide vers l'abandon.</div>
+        <div class="erreur-fix">✓ Compare-toi uniquement à toi-même. Photos mensuelles, poids sur les exercices clés.</div>
+      </div>
+
+      <div class="erreur-card">
+        <div class="erreur-num">06</div>
+        <div class="erreur-head">
+          <span class="erreur-icon">🎯</span>
+          <div class="erreur-title">Négliger les muscles "ennuyeux"</div>
+        </div>
+        <div class="erreur-body">Tout le monde veut travailler les biceps et les abdos. Personne ne veut faire des ischio-jambiers, des mollets ou des rotateurs de l'épaule. Ces déséquilibres créent des blessures et plafonnent les performances globales.</div>
+        <div class="erreur-fix">✓ Suis le programme intégralement — chaque muscle est là pour une raison.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROGRESSION & PLATEAU -->
+  <section class="extra-section">
+    <div class="section-eyebrow">Progression & Plateaux — Comment continuer à avancer</div>
+
+    <div class="prog-intro">
+      La progression linéaire (ajouter du poids ou des reps à chaque séance) ne dure que les premiers mois. Ensuite, il faut des stratégies plus fines pour continuer à progresser. Voici comment casser les plateaux et mesurer ce qui compte vraiment.
+    </div>
+
+    <div class="prog-grid">
+
+      <div class="prog-block">
+        <div class="prog-block-title">📈 Mesurer sa progression</div>
+        <div class="prog-block-body">
+          <p>La balance seule ment. Pour mesurer une vraie évolution musculaire :</p>
+          <ul>
+            <li><strong>Photos bi-mensuelles</strong> — même heure, même lumière, même pose. L'évolution sur 3 mois est souvent invisible semaine après semaine</li>
+            <li><strong>Tour de taille, poitrine, bras, cuisse</strong> — si les bras grossissent et le ventre stabilise, c'est la bonne direction</li>
+            <li><strong>Performances sur les exercices clés</strong> — combien de pompes, combien de reps sur le squat, chrono de gainage</li>
+            <li><strong>Journal d'entraînement</strong> — même un simple carnet. Note séries × reps × sensation. Tu verras la progression</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="prog-block">
+        <div class="prog-block-title">🔁 Casser un plateau</div>
+        <div class="prog-block-body">
+          <p>Tu stagnates depuis 2 à 3 semaines ? C'est normal. Voici les leviers à activer :</p>
+          <ul>
+            <li><strong>Ajoute une série</strong> — passe de 3×12 à 4×12 sur ton exercice principal</li>
+            <li><strong>Réduis le temps de repos</strong> — 90s → 60s augmente l'intensité sans changer les charges</li>
+            <li><strong>Change le tempo</strong> — descente de 3 à 4 secondes (tempo excentrique). Le muscle travaille différemment</li>
+            <li><strong>Essaie le rest-pause</strong> — fais 8 reps, attends 15s, refais 3–4 reps, attends 15s, encore 2–3 reps. Une série, mais très intense</li>
+            <li><strong>Ajoute une séance de volume</strong> — séance légère supplémentaire avec 50% du poids habituel, beaucoup de reps (15–20)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="prog-timeline">
+      <div class="prog-timeline-title">À quoi s'attendre — Calendrier réaliste</div>
+      <div class="prog-steps">
+        <div class="prog-step">
+          <div class="prog-step-dot" style="background:#f97316"></div>
+          <div class="prog-step-period">Semaines 1–4</div>
+          <div class="prog-step-desc">Adaptation neuromusculaire. Tu gagnes en coordination et en force, pas encore beaucoup en volume. C'est normal — <strong>ne te décourage pas</strong>.</div>
+        </div>
+        <div class="prog-step">
+          <div class="prog-step-dot" style="background:#fbbf24"></div>
+          <div class="prog-step-period">Mois 2–3</div>
+          <div class="prog-step-desc">Première vraie croissance musculaire visible. La force augmente régulièrement. La nutrition commence à faire une vraie différence. <strong>Continue exactement ce que tu fais.</strong></div>
+        </div>
+        <div class="prog-step">
+          <div class="prog-step-dot" style="background:#22c55e"></div>
+          <div class="prog-step-period">Mois 4–6</div>
+          <div class="prog-step-desc">Le physique commence à changer clairement. Ton entourage le remarque. La récupération s'améliore. C'est là que <strong>les plateaux apparaissent</strong> — et qu'il faut les gérer.</div>
+        </div>
+        <div class="prog-step">
+          <div class="prog-step-dot" style="background:#3b82f6"></div>
+          <div class="prog-step-period">Mois 6–12</div>
+          <div class="prog-step-desc">Phase de progression solide. Volume et force s'accumulent. La progression devient moins spectaculaire mais plus durable. C'est la phase où <strong>95% des gens abandonnent</strong> — reste dans les 5%.</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
 </div><!-- end conseils inner -->
 </div><!-- end tabContentConseils -->
+
+<!-- COMPLÉMENTS -->
+<div id="tabContentComplements" style="display:none">
+<div style="max-width:820px;margin:0 auto;padding:32px 16px 80px">
+
+  <!-- INTRO -->
+  <div class="comp-intro">
+    <div class="comp-intro-icon">⚗️</div>
+    <div>
+      <div class="comp-intro-title">Les compléments ne remplacent rien</div>
+      <p>Un mauvais sommeil, une alimentation bancale et un manque de régularité ne se corrigent pas avec des poudres. Les compléments ne font que <strong>compléter</strong> — d'où leur nom. Commence par fixer les bases, ensuite seulement tu peux envisager de les ajouter.</p>
+    </div>
+  </div>
+
+  <!-- TIER LIST -->
+  <div class="section-eyebrow" style="margin-top:32px">Classement par niveau de preuve scientifique</div>
+
+  <!-- TIER S -->
+  <div class="tier-block">
+    <div class="tier-badge tier-s">Tier S — Indispensables</div>
+    <div class="tier-desc">Efficacité prouvée par des dizaines d'études solides. Rapport bénéfice/coût imbattable. À considérer en premier.</div>
+    <div class="comp-grid">
+
+      <div class="comp-card">
+        <div class="comp-card-top">
+          <div class="comp-emoji">💪</div>
+          <div>
+            <div class="comp-name">Créatine monohydrate</div>
+            <div class="comp-tags">
+              <span class="comp-tag green">Force +5–15%</span>
+              <span class="comp-tag green">Masse +1–2 kg</span>
+              <span class="comp-tag blue">~15€/mois</span>
+            </div>
+          </div>
+        </div>
+        <div class="comp-body">
+          La créatine est le complément le plus étudié au monde — plus de 500 études cliniques. Elle augmente les réserves de phosphocréatine dans les muscles, ce qui améliore la puissance explosive et la récupération entre les séries. Elle provoque une légère rétention d'eau intramusculaire (+1–2 kg) qui n'est pas de la graisse.
+        </div>
+        <div class="comp-dosage">
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Dose</span><span>3–5 g par jour, tous les jours (pas besoin de "charge")</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Timing</span><span>Peu importe — post-séance légèrement mieux selon certaines études</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Forme</span><span>Monohydrate uniquement — les autres formes (HCl, éthyl ester) ne font pas mieux</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">À savoir</span><span>Effets visibles après 2–4 semaines. 100% sûre à long terme. Inutile si tu manges beaucoup de viande rouge</span></div>
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div class="comp-card-top">
+          <div class="comp-emoji">🥛</div>
+          <div>
+            <div class="comp-name">Protéines Whey</div>
+            <div class="comp-tags">
+              <span class="comp-tag green">Récupération</span>
+              <span class="comp-tag green">Synthèse musculaire</span>
+              <span class="comp-tag blue">~25–40€/kg</span>
+            </div>
+          </div>
+        </div>
+        <div class="comp-body">
+          La whey n'est pas magique — c'est juste une source de protéines pratique et rapide à assimiler. Elle est utile si tu n'arrives pas à atteindre ton apport protéique quotidien via la nourriture seule. Un shaker de 30 g de whey apporte environ 22–25 g de protéines.
+        </div>
+        <div class="comp-dosage">
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Dose</span><span>1 à 2 shakers par jour selon tes besoins. Pas plus — les protéines en excès ne servent à rien</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Timing</span><span>Dans les 30–60 min post-séance pour maximiser la synthèse protéique</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Forme</span><span>Whey concentrate (moins chère) ou isolate (plus pure, mieux tolérée si intolérance lactose légère)</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">À savoir</span><span>Le fromage blanc, les œufs ou le poulet font exactement le même effet. La whey, c'est de la commodité</span></div>
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div class="comp-card-top">
+          <div class="comp-emoji">☀️</div>
+          <div>
+            <div class="comp-name">Vitamine D3</div>
+            <div class="comp-tags">
+              <span class="comp-tag green">Testostérone</span>
+              <span class="comp-tag green">Immunité</span>
+              <span class="comp-tag blue">~5€/mois</span>
+            </div>
+          </div>
+        </div>
+        <div class="comp-body">
+          80% des Français sont en déficit de vitamine D, particulièrement en hiver. Cette vitamine joue un rôle dans la production de testostérone, la force musculaire, la santé osseuse et le système immunitaire. Un déficit non traité plafonne discrètement tes performances.
+        </div>
+        <div class="comp-dosage">
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Dose</span><span>1000–2000 UI/jour en automne-hiver. Certains ont besoin de 4000 UI selon leur bilan sanguin</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Timing</span><span>Le matin avec un repas contenant des graisses (liposoluble)</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Forme</span><span>D3 (cholécalciférol) uniquement — la D2 est moins bien assimilée. Idéalement avec K2 pour l'absorption calcique</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">À savoir</span><span>Faire un bilan sanguin une fois par an. La surdose est possible mais rare aux doses recommandées</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TIER A -->
+  <div class="tier-block">
+    <div class="tier-badge tier-a">Tier A — Très utiles</div>
+    <div class="tier-desc">Preuves solides, bénéfices réels. Moins universels que le Tier S — utiles selon ton profil et tes objectifs.</div>
+    <div class="comp-grid">
+
+      <div class="comp-card">
+        <div class="comp-card-top">
+          <div class="comp-emoji">☕</div>
+          <div>
+            <div class="comp-name">Caféine</div>
+            <div class="comp-tags">
+              <span class="comp-tag orange">Performance +3–10%</span>
+              <span class="comp-tag orange">Endurance</span>
+              <span class="comp-tag blue">Quasi gratuit</span>
+            </div>
+          </div>
+        </div>
+        <div class="comp-body">
+          La caféine est un des boosters de performance les plus éprouvés scientifiquement. Elle réduit la perception de l'effort, augmente la force maximale et la résistance à la fatigue. Un café avant la séance fait vraiment une différence mesurable.
+        </div>
+        <div class="comp-dosage">
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Dose</span><span>3–6 mg/kg de poids. Pour 75 kg : 225–450 mg (2–4 cafés)</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Timing</span><span>30–60 min avant la séance. Évite après 14h pour ne pas perturber le sommeil</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">À savoir</span><span>La tolérance s'installe vite — des cycles (5 jours on / 2 jours off) maintiennent l'efficacité</span></div>
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div class="comp-card-top">
+          <div class="comp-emoji">🐟</div>
+          <div>
+            <div class="comp-name">Oméga-3 (EPA + DHA)</div>
+            <div class="comp-tags">
+              <span class="comp-tag orange">Anti-inflammation</span>
+              <span class="comp-tag orange">Récupération</span>
+              <span class="comp-tag blue">~15–20€/mois</span>
+            </div>
+          </div>
+        </div>
+        <div class="comp-body">
+          Les oméga-3 réduisent l'inflammation musculaire post-séance, améliorent la sensibilité à l'insuline et soutiennent la santé cardiovasculaire. Utiles si tu ne manges pas de poissons gras 2–3 fois par semaine (sardines, maquereaux, saumon).
+        </div>
+        <div class="comp-dosage">
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Dose</span><span>2–3 g d'EPA+DHA combinés par jour (vérifier l'étiquette — pas juste "oméga-3")</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Timing</span><span>Avec les repas pour une meilleure absorption et éviter l'arrière-goût de poisson</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Forme</span><span>Huile de poisson triglycéride (mieux absorbée que l'ester éthylique). Choisir une marque testée IFOS</span></div>
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div class="comp-card-top">
+          <div class="comp-emoji">⚡</div>
+          <div>
+            <div class="comp-name">Magnésium bisglycinate</div>
+            <div class="comp-tags">
+              <span class="comp-tag orange">Récupération</span>
+              <span class="comp-tag orange">Sommeil</span>
+              <span class="comp-tag blue">~10–15€/mois</span>
+            </div>
+          </div>
+        </div>
+        <div class="comp-body">
+          Le magnésium est impliqué dans plus de 300 réactions enzymatiques dans le corps, dont la contraction musculaire et la synthèse protéique. La transpiration en épuise les réserves. Un déficit provoque crampes, fatigue, mauvais sommeil — très fréquent chez les sportifs.
+        </div>
+        <div class="comp-dosage">
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Dose</span><span>200–400 mg de magnésium élémentaire par jour</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Timing</span><span>Le soir avant le coucher — améliore la qualité du sommeil</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Forme</span><span>Bisglycinate ou malate uniquement — l'oxyde de magnésium (le moins cher) est très mal absorbé</span></div>
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div class="comp-card-top">
+          <div class="comp-emoji">🔴</div>
+          <div>
+            <div class="comp-name">Bêta-alanine</div>
+            <div class="comp-tags">
+              <span class="comp-tag orange">Endurance musculaire</span>
+              <span class="comp-tag blue">~10€/mois</span>
+            </div>
+          </div>
+        </div>
+        <div class="comp-body">
+          La bêta-alanine augmente les réserves de carnosine dans les muscles, ce qui tampon l'acidité produite pendant l'effort intense. Résultat : tu peux tenir quelques reps supplémentaires dans les hautes répétitions (12–20). Elle provoque un picotement cutané inoffensif (paresthésie) — normal.
+        </div>
+        <div class="comp-dosage">
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Dose</span><span>3,2–6,4 g par jour, à diviser en 2 prises pour limiter les picotements</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">Timing</span><span>Peu importe — les effets sont cumulatifs (2–4 semaines de saturation)</span></div>
+          <div class="comp-dosage-row"><span class="comp-dosage-label">À savoir</span><span>Surtout utile pour les sports d'endurance-force (15–20 reps). Moins d'intérêt si tu fais du 3×8 lourd</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TIER B -->
+  <div class="tier-block">
+    <div class="tier-badge tier-b">Tier B — Situationnels</div>
+    <div class="tier-desc">Utiles dans certains contextes précis. Pas prioritaires, surtout si le budget est limité.</div>
+    <div class="comp-grid">
+
+      <div class="comp-card comp-card-small">
+        <div class="comp-card-top">
+          <div class="comp-emoji">😴</div>
+          <div>
+            <div class="comp-name">Mélatonine</div>
+            <div class="comp-tags"><span class="comp-tag gray">Sommeil</span><span class="comp-tag blue">~5€/mois</span></div>
+          </div>
+        </div>
+        <div class="comp-body">Si tu as du mal à t'endormir ou à réguler ton cycle, 0,5 à 1 mg (pas plus) 30 min avant le coucher. Les fortes doses (5–10 mg) vendues aux US ne sont pas plus efficaces et perturbe le cycle naturel.</div>
+      </div>
+
+      <div class="comp-card comp-card-small">
+        <div class="comp-card-top">
+          <div class="comp-emoji">🦴</div>
+          <div>
+            <div class="comp-name">Collagène + Vitamine C</div>
+            <div class="comp-tags"><span class="comp-tag gray">Tendons & articulations</span><span class="comp-tag blue">~20€/mois</span></div>
+          </div>
+        </div>
+        <div class="comp-body">15–20 g de collagène hydrolysé avec 50 mg de vitamine C, 30–60 min avant une séance sollicitant les tendons. Utile en prévention de blessures tendinales ou en rééducation. Peu d'effet sur le muscle lui-même.</div>
+      </div>
+
+      <div class="comp-card comp-card-small">
+        <div class="comp-card-top">
+          <div class="comp-emoji">🩸</div>
+          <div>
+            <div class="comp-name">Fer (femmes)</div>
+            <div class="comp-tags"><span class="comp-tag gray">Énergie & endurance</span><span class="comp-tag blue">~10€/mois</span></div>
+          </div>
+        </div>
+        <div class="comp-body">À supplémenter uniquement si un bilan sanguin confirme une carence. La fatigue chronique inexpliquée chez les femmes sportives est souvent liée au fer. Ne jamais se supplémenter sans bilan — le fer en excès est toxique.</div>
+      </div>
+
+      <div class="comp-card comp-card-small">
+        <div class="comp-card-top">
+          <div class="comp-emoji">🌿</div>
+          <div>
+            <div class="comp-name">Ashwagandha (KSM-66)</div>
+            <div class="comp-tags"><span class="comp-tag gray">Stress & cortisol</span><span class="comp-tag blue">~15€/mois</span></div>
+          </div>
+        </div>
+        <div class="comp-body">Adaptogène qui réduit le cortisol et améliore la récupération mentale. Des études montrent un gain de force modeste (~10%) après 8 semaines. Utile en période de stress intense. Extrait KSM-66 uniquement — les autres extraits ont moins de preuves.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- À ÉVITER -->
+  <div class="section-eyebrow" style="margin-top:32px">Ce qu'il faut éviter</div>
+  <div class="comp-avoid-grid">
+
+    <div class="comp-avoid-card">
+      <div class="comp-avoid-head">
+        <span class="comp-avoid-icon">🚫</span>
+        <div class="comp-avoid-name">Boosters de testostérone</div>
+      </div>
+      <div class="comp-avoid-body">Pas réglementés, presque tous inefficaces sur un individu en bonne santé. Certains contiennent des substances non déclarées potentiellement dangereuses.</div>
+    </div>
+
+    <div class="comp-avoid-card">
+      <div class="comp-avoid-head">
+        <span class="comp-avoid-icon">🚫</span>
+        <div class="comp-avoid-name">Brûleurs de graisse</div>
+      </div>
+      <div class="comp-avoid-body">Soit de la caféine recyclée à prix gonflé, soit des ingrédients non prouvés. L'effet est négligeable. Le vrai brûle-graisse s'appelle "déficit calorique".</div>
+    </div>
+
+    <div class="comp-avoid-card">
+      <div class="comp-avoid-head">
+        <span class="comp-avoid-icon">🚫</span>
+        <div class="comp-avoid-name">BCAA (si tu manges assez de protéines)</div>
+      </div>
+      <div class="comp-avoid-body">Si ton apport protéique est correct (1,6–2 g/kg), les BCAA n'apportent rien de plus. Tu paies cher pour acides aminés déjà présents dans ta whey ou ta viande. Utile uniquement à jeun strict.</div>
+    </div>
+
+    <div class="comp-avoid-card">
+      <div class="comp-avoid-head">
+        <span class="comp-avoid-icon">🚫</span>
+        <div class="comp-avoid-name">Glutamine (en musculation)</div>
+      </div>
+      <div class="comp-avoid-body">Populaire dans les années 90, depuis démystifiée. Aucun effet prouvé sur la récupération ou la masse musculaire chez des sportifs bien nourris. À réserver aux situations médicales spécifiques.</div>
+    </div>
+
+    <div class="comp-avoid-card">
+      <div class="comp-avoid-head">
+        <span class="comp-avoid-icon">🚫</span>
+        <div class="comp-avoid-name">Pré-workouts propriétaires</div>
+      </div>
+      <div class="comp-avoid-body">Les mélanges "propriétaires" masquent les dosages réels. La plupart contiennent de la caféine + bêta-alanine sous-dosées avec des fillers inutiles. Fais le toi-même pour 3x moins cher.</div>
+    </div>
+
+    <div class="comp-avoid-card">
+      <div class="comp-avoid-head">
+        <span class="comp-avoid-icon">🚫</span>
+        <div class="comp-avoid-name">Gainers industriels</div>
+      </div>
+      <div class="comp-avoid-body">Très riches en sucres rapides et pauvres en protéines de qualité. Tu prendras du gras avant du muscle. Préfère une vraie collation (flocons d'avoine + whey + banane) pour 3 fois moins cher.</div>
+    </div>
+
+  </div>
+
+  <!-- STACK RECOMMANDÉ -->
+  <div class="section-eyebrow" style="margin-top:32px">Stack recommandé selon le budget</div>
+  <div class="stack-grid">
+
+    <div class="stack-card">
+      <div class="stack-label" style="color:#4ade80">Budget serré — ~20€/mois</div>
+      <div class="stack-items">
+        <div class="stack-item"><span class="stack-dot" style="background:#f97316"></span>Créatine monohydrate 5 g/jour</div>
+        <div class="stack-item"><span class="stack-dot" style="background:#f97316"></span>Vitamine D3 1000 UI/jour</div>
+        <div class="stack-item"><span class="stack-dot" style="background:#f97316"></span>Café avant la séance</div>
+      </div>
+      <div class="stack-note">Ce trio seul peut faire une vraie différence. Ne cherche pas plus compliqué tant que les bases (sommeil, nutrition, régularité) ne sont pas en place.</div>
+    </div>
+
+    <div class="stack-card">
+      <div class="stack-label" style="color:#fbbf24">Budget moyen — ~50–60€/mois</div>
+      <div class="stack-items">
+        <div class="stack-item"><span class="stack-dot" style="background:#fbbf24"></span>Créatine monohydrate 5 g/jour</div>
+        <div class="stack-item"><span class="stack-dot" style="background:#fbbf24"></span>Vitamine D3 + K2</div>
+        <div class="stack-item"><span class="stack-dot" style="background:#fbbf24"></span>Oméga-3 2 g EPA+DHA/jour</div>
+        <div class="stack-item"><span class="stack-dot" style="background:#fbbf24"></span>Magnésium bisglycinate le soir</div>
+        <div class="stack-item"><span class="stack-dot" style="background:#fbbf24"></span>Whey si besoin protéique non couvert</div>
+      </div>
+      <div class="stack-note">Le stack complet pour quelqu'un qui s'entraîne sérieusement 3 à 5 fois par semaine. Chaque élément a une utilité claire.</div>
+    </div>
+
+    <div class="stack-card">
+      <div class="stack-label" style="color:#a855f7">Budget optimisé — ~80–100€/mois</div>
+      <div class="stack-items">
+        <div class="stack-item"><span class="stack-dot" style="background:#a855f7"></span>Tout le stack moyen</div>
+        <div class="stack-item"><span class="stack-dot" style="background:#a855f7"></span>Bêta-alanine (si entraînements intenses)</div>
+        <div class="stack-item"><span class="stack-dot" style="background:#a855f7"></span>Ashwagandha KSM-66 (si stress élevé)</div>
+        <div class="stack-item"><span class="stack-dot" style="background:#a855f7"></span>Collagène + Vit C (si tendons fragiles)</div>
+      </div>
+      <div class="stack-note">À ce niveau, les gains marginaux sont réels mais faibles. Chaque ajout doit être justifié par un besoin identifié, pas par du marketing.</div>
+    </div>
+
+  </div>
+
+  <div class="comp-disclaimer">
+    <span>⚕️</span>
+    <span>Ces informations sont à titre éducatif. Certains compléments peuvent interagir avec des médicaments ou des conditions médicales. En cas de doute, consulte un médecin ou un diététicien du sport avant de commencer une supplémentation.</span>
+  </div>
+
+</div>
+</div><!-- end tabContentComplements -->
 
 <footer>
   Programme généré avec soin &nbsp;·&nbsp; Consulte un professionnel de santé avant de commencer
@@ -3232,16 +3895,19 @@ function switchTab(tab) {
   document.getElementById('tabSalle').classList.toggle('active', tab === 'salle');
   document.getElementById('tabCali').classList.toggle('active', tab === 'cali');
   document.getElementById('tabConseils').classList.toggle('active', tab === 'conseils');
+  document.getElementById('tabComplements').classList.toggle('active', tab === 'complements');
 
   const isSport = tab === 'maison' || tab === 'salle' || tab === 'cali';
   document.getElementById('tabContentSport').style.display = isSport ? '' : 'none';
   document.getElementById('tabContentConseils').style.display = tab === 'conseils' ? '' : 'none';
+  document.getElementById('tabContentComplements').style.display = tab === 'complements' ? '' : 'none';
 
   const heroMap = {
-    maison:   { eyebrow: 'Débutant · Maison · Sans matériel',                      span: 'Prise de Masse',        sub: 'Tapis de sol uniquement &nbsp;·&nbsp; 6 séances / 7 jours',   seances: '6', exos: '35', min: '45' },
-    salle:    { eyebrow: 'Intermédiaire · Salle de sport · Haltères & Barres',     span: 'Musculation Salle',     sub: 'Équipement complet &nbsp;·&nbsp; 4 séances / 7 jours',          seances: '4', exos: '24', min: '60' },
-    cali:     { eyebrow: 'Intermédiaire · Street park · Barres & Parallettes',     span: 'Calisthénie & Street',  sub: 'Parc ou barre de traction &nbsp;·&nbsp; 4 séances / 7 jours',   seances: '4', exos: '20', min: '50' },
-    conseils: { eyebrow: 'Nutrition · Récupération · Mental · Hygiène',            span: 'Conseils & Guides',     sub: 'Tout ce qu\'il faut savoir pour progresser durablement',         seances: '6', exos: '8',  min: '∞'  },
+    maison:      { eyebrow: 'Débutant · Maison · Sans matériel',                   span: 'Prise de Masse',        sub: 'Tapis de sol uniquement &nbsp;·&nbsp; 6 séances / 7 jours',  seances: '6', exos: '35', min: '45' },
+    salle:       { eyebrow: 'Intermédiaire · Salle de sport · Haltères & Barres',  span: 'Musculation Salle',     sub: 'Équipement complet &nbsp;·&nbsp; 4 séances / 7 jours',         seances: '4', exos: '24', min: '60' },
+    cali:        { eyebrow: 'Intermédiaire · Street park · Barres & Parallettes',  span: 'Calisthénie & Street',  sub: 'Parc ou barre de traction &nbsp;·&nbsp; 4 séances / 7 jours',  seances: '4', exos: '20', min: '50' },
+    conseils:    { eyebrow: 'Nutrition · Récupération · Mental · Hygiène',         span: 'Conseils & Guides',     sub: 'Tout ce qu\'il faut savoir pour progresser durablement',        seances: '6', exos: '8',  min: '∞'  },
+    complements: { eyebrow: 'Science · Dosages · Tier list · Stack recommandé',    span: 'Compléments',           sub: 'Ce qui marche vraiment — classé par niveau de preuve',          seances: '—', exos: '—',  min: '—'  },
   };
 
   const hero = heroMap[tab];
@@ -3259,11 +3925,7 @@ function switchTab(tab) {
   }, 220);
 
   const heroStats = document.getElementById('heroStats');
-  if (tab === 'conseils') {
-    heroStats.style.display = 'none';
-  } else {
-    heroStats.style.display = '';
-  }
+  heroStats.style.display = (tab === 'conseils' || tab === 'complements') ? 'none' : '';
 
   if (isSport) {
     renderNav();
